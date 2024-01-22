@@ -25,23 +25,23 @@ public class Controller {
 
     private void task1() {
         String[] words = {"brange", "plum", "tomato", "onibn", "grape"};
-        Model StringsModel = null;
-        words = StringsModel.fixWords(words);
+        Model stringsModel = null;
+        words = stringsModel.fixWords(words);
         StringsView.printWordsInColumn(words);
     }
 
     private void task2() {
         String[] words = {"orange", "plum", "tomato", "onion", "grape", "onion"};
-        Model StringsModel = null;
-        words = StringsModel.removeOnion(words);
+        Model stringsModel = null;
+        words = stringsModel.removeOnion(words);
         StringsView.printWordsInColumn(words);
     }
 
     private void task3() {
         String[] names = {"Bob", "Alice", "Tom", "Lucy", "Bob", "Lisa"};
         String searchName = StringsInputView.getInputName();
-        Model StringsModel = null;
-        int count = StringsModel.countOccurrences(names, searchName);
+        Model stringsModel = null;
+        int count = stringsModel.countOccurrences(names, searchName);
         StringsView.printSearchResult(searchName, count);
     }
 }
